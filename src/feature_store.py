@@ -31,6 +31,7 @@ class RedisFeatureStore:
     #     keys = self.client.keys('entity:*:features')
     #     entity_ids = [keys.decode(':')[1] for key in keys]
     #     return entity_ids
+    
     def get_all_entity_ids(self):
         keys = self.client.keys('entity:*:features')
         entity_ids = [key.split(':')[1] for key in keys]
