@@ -70,7 +70,7 @@ class DataProcessing:
             batch_data = {}
             for idx , row in self.data.iterrows():
                 entity_id = row['PassengerId']
-                features = row.drop(['Survived', 'Name', 'Ticket', 'Cabin']).to_dict()
+                features = row.drop([ 'Name', 'Ticket', 'Cabin']).to_dict()
                 batch_data[entity_id] = features
             self.feature_store.store_batch_features(batch_data)
             logger.info("Features stored in Redis successfully.")

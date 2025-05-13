@@ -13,7 +13,7 @@ class RedisFeatureStore:
         self.client.set(key , json.dumps(features))   
          
     def get_features(self,entity_id):
-       key = f"entity{entity_id}:features"
+       key = f"entity:{entity_id}:features"
        features = self.client.get(key)
        if features:
            return json.loads(features)
