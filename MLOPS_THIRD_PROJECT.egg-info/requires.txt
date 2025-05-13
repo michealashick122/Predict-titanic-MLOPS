@@ -1,0 +1,8 @@
+setuptools
+numpy
+pandas
+scikit-learn
+psycopg2
+sqlalchemy
+imblearn
+redis

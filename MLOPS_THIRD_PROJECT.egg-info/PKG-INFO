@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: MLOPS-THIRD-PROJECT
+Version: 0.1
+Author: Michel
+Requires-Dist: setuptools
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: psycopg2
+Requires-Dist: sqlalchemy
+Requires-Dist: imblearn
+Requires-Dist: redis
+Dynamic: author
+Dynamic: requires-dist
